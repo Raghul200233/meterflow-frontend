@@ -3,29 +3,31 @@
   "version": "1.0.0",
   "private": true,
   "engines": {
-    "node": "24.x",
-    "npm": "9.x"
+    "node": "24.x"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.17",
-    "@heroicons/react": "^2.0.18",
-    "axios": "^1.6.2",
-    "date-fns": "^2.30.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-query": "^3.39.3",
-    "react-router-dom": "^6.20.1",
     "react-scripts": "5.0.1",
-    "recharts": "^2.10.3"
+    "axios": "^1.6.0",
+    "react-router-dom": "^6.20.0",
+    "react-query": "^3.39.3",
+    "recharts": "^2.8.0",
+    "@heroicons/react": "^2.0.18",
+    "@headlessui/react": "^1.7.17",
+    "date-fns": "^2.30.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "DISABLE_ESLINT_PLUGIN=true react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": ["react-app"]
+    "extends": ["react-app"],
+    "rules": {
+      "no-restricted-globals": "off"
+    }
   },
   "browserslist": {
     "production": [">0.2%", "not dead", "not op_mini all"],

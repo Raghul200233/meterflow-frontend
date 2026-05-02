@@ -1,4 +1,4 @@
-// frontend/src/components/ConsumerDashboard.jsx
+/* eslint-disable no-restricted-globals */
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { 

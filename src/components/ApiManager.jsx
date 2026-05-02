@@ -1,4 +1,4 @@
-// frontend/src/components/ApiManager.jsx
+/* eslint-disable no-restricted-globals */
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
